@@ -14,5 +14,5 @@ describe('App: NgBishops', () => {
       inject([NgBishopsAppComponent], (app: NgBishopsAppComponent) => {
     expect(app).toBeTruthy();
   }));
-  
+
 });

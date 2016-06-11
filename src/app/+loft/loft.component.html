@@ -1,3 +1,9 @@
-<p>
-  loft works!
-</p>
+<div *ngIf="isLoggedIn">
+
+  <div><app-game></app-game></div>
+  <!--<div><app-chat></app-chat></div>-->
+
+</div>
+<div *ngIf="!isLoggedIn">
+  <h3>Please log in before viewing this page</h3>
+</div>

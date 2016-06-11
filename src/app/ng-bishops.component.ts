@@ -32,4 +32,5 @@ import { LoginComponent } from './login';
 export class NgBishopsAppComponent {
 
   constructor(private router: Router) {}
+  
 }

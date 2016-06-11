@@ -8,6 +8,7 @@ import { ProfileComponent } from './+profile';
 import { LoftComponent } from './+loft';
 import { ChatComponent } from './+chat';
 import { GameComponent } from './+game';
+import { LoginComponent } from './login';
 
 @Component({
   moduleId: module.id,
@@ -18,13 +19,14 @@ import { GameComponent } from './+game';
   providers: [ROUTER_PROVIDERS]
 })
 @Routes([
-  {path: '/home', component: HomeComponent},
+  {path: '/', component: HomeComponent},
   {path: '/leaderboard', component: LeaderboardComponent},
   {path: '/rules', component: RulesComponent},
   {path: '/about', component: AboutComponent},
   {path: '/profile', component: ProfileComponent},
   {path: '/loft', component: LoftComponent},
   {path: '/chat', component: ChatComponent},
+  {path: '/login', component: LoginComponent},
   {path: '/game', component: GameComponent}
 ])
 export class NgBishopsAppComponent {

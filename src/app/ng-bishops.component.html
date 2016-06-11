@@ -1,13 +1,14 @@
 <header>
+  <img src="./img/logo.jpg">
   <div class="nav">
     <ul>
-      <li class="home"><a href="#">Home</a></li>
-      <li class="tutorials"><a href="#">Leaderboards</a></li>
-      <li class="about"><a href="#">Rules</a></li>
-      <li class="about"><a href="#">Play!</a></li>
-      <li class="news"><a href="#">About</a></li>
-      <li class="news"><a href="#">Profile</a></li>
-      <li class="contact"><a href="#">Login</a></li>
+      <li class="home"><a [routerLink]="['/']" href="#">Home</a></li>
+      <li class="tutorials"><a [routerLink]="['/leaderboard']" href="#">Leaderboards</a></li>
+      <li class="about"><a [routerLink]="['/rules']" href="#">Rules</a></li>
+      <li class="about"><a [routerLink]="['/loft']" href="#">Play!</a></li>
+      <li class="news"><a [routerLink]="['/about']" href="#">About</a></li>
+      <li class="news"><a [routerLink]="['/profile']" href="#">Profile</a></li>
+      <li class="contact"><a [routerLink]="['/login']" href="#">Login</a></li>
     </ul>
   </div>
 </header>

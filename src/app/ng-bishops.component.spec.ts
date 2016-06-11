@@ -14,9 +14,5 @@ describe('App: NgBishops', () => {
       inject([NgBishopsAppComponent], (app: NgBishopsAppComponent) => {
     expect(app).toBeTruthy();
   }));
-
-  it('should have as title \'ng-bishops works!\'',
-      inject([NgBishopsAppComponent], (app: NgBishopsAppComponent) => {
-    expect(app.title).toEqual('ng-bishops works!');
-  }));
+  
 });

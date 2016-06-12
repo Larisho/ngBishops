@@ -24,8 +24,6 @@ import { LoginComponent } from './login';
   {path: '/rules', component: RulesComponent},
   {path: '/about', component: AboutComponent},
   {path: '/profile', component: ProfileComponent},
-  {path: '/loft/game', component: GameComponent},
-  {path: '/loft/chat', component: ChatComponent},
   {path: '/login', component: LoginComponent},
   {path: '/loft', component: LoftComponent}
 ])
@@ -37,9 +35,8 @@ export class NgBishopsAppComponent implements OnInit {
 
   logout() {
     NgBishopsAppComponent.delete_cookie("check");
-    this._router.navigate(['/']);
+    NgBishopsAppComponent.delete_cookie("username");
     window.location.reload();
-    this._router.navigate(['/']);
   }
 
   static createCookie(name: string, value: string, days: number) {
@@ -71,6 +68,8 @@ export class NgBishopsAppComponent implements OnInit {
 
   ngOnInit() {
     this.isLoggedIn = false;
+
+    this._router.navigate(['/']);
 
     if (NgBishopsAppComponent.getCookie("check") === "123") {
       this.isLoggedIn = true;

@@ -8,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
+  chat: string = "";
+
   constructor() {}
 
+  getChat() {
+    
+  }
+
   ngOnInit() {
+    setInterval(this.getChat(), 1000);
   }
 
 }

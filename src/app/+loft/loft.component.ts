@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { NgBishopsAppComponent } from '../ng-bishops.component';
+import { GameComponent } from '../+game/';
+import { ChatComponent } from '../+chat/';
 
 @Component({
   moduleId: module.id,
@@ -11,7 +14,7 @@ export class LoftComponent implements OnInit {
 
   isLoggedIn: boolean;
 
-  constructor() {}
+  constructor(private _router: Router) {}
 
   ngOnInit() {
     this.isLoggedIn = false;

@@ -1,3 +1,9 @@
-<p>
-  chat works!
-</p>
+<div>
+  <h1>Universal Chat</h1>
+
+  <div id="messageBox">
+    {{chat}}
+  </div>
+  <input type="text" id="message" placeholder="Enter message here..." #message >
+  <button type="submit" id="submit" (click)="onSubmit(#message.value)">Send</button>
+</div>

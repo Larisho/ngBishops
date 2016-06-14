@@ -1,3 +1,18 @@
-<p>
-  chat works!
-</p>
+<section class="module">
+
+  <header class="top-bar">
+    <h3>Universal Chat</h3>
+    <!-- likely some spans and stuff -->
+  </header>
+
+  <ul class="conversation">
+    <!--<li>
+      <div class="message">
+        <p></p>
+      </div>
+    <li>-->
+  </ul>
+  <input #message type="text" id="message" placeholder="Enter message here...">
+  <button type="submit" id="submit" (click)="onSubmit(message.value)">Send</button>
+
+</section>

@@ -1,0 +1,41 @@
+.module {
+    border: 2px #444 solid;
+
+    font-family: 'Oswald', sans-serif;
+
+    -webkit-border-bottom-right-radius: 30px;
+    -webkit-border-bottom-left-radius: 30px;
+    -moz-border-radius-bottomright: 30px;
+    -moz-border-radius-bottomleft: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    height: 60%;
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.top-bar {
+    background: #444;
+
+    text-align: center;
+
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.conversation {
+    height: 69%;
+    margin-top: 0px;
+    border: 1px #adadad solid;
+
+    overflow: auto;
+}
+
+#message {
+    margin-left: 10px;
+    width: 80%;
+}

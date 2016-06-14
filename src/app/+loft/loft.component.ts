@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { NgBishopsAppComponent } from '../ng-bishops.component';
+import { GameComponent } from '../game';
+import { ChatComponent } from '../chat';
+
 @Component({
   moduleId: module.id,
   selector: 'app-loft',
   templateUrl: 'loft.component.html',
+  directives: [GameComponent, 
+              ChatComponent],
   styleUrls: ['loft.component.css']
 })
 export class LoftComponent implements OnInit {

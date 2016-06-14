@@ -6,8 +6,6 @@ import { RulesComponent } from './+rules';
 import { AboutComponent } from './+about';
 import { ProfileComponent } from './+profile';
 import { LoftComponent } from './+loft';
-import { ChatComponent } from './+chat';
-import { GameComponent } from './+game';
 import { LoginComponent } from './login';
 
 @Component({

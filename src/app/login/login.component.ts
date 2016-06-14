@@ -23,14 +23,14 @@ export class LoginComponent {
       this.error = "You must fill all boxes";
       return;
     }
-
-    console.log(username + " " + password);
+    
     this._service.login(username, password)
       .subscribe(
         data => {
-          console.log(data);
-          if (data.status === "success") {
-            good = true;
+          if (data.data.status === "success") {
+            NgBishopsAppComponent.createCookie("check", "123", 0);
+            NgBishopsAppComponent.createCookie("username", username, 0);
+            window.location.reload();
           }
           else {
             this.error = "Invalid username or password";
@@ -38,12 +38,6 @@ export class LoginComponent {
         },
         error => console.error(error)
       );
-
-    if (good) {
-      NgBishopsAppComponent.createCookie("check", "123", 0);
-      NgBishopsAppComponent.createCookie("username", username, 0);
-      window.location.reload();
-    }
   }
 
 }

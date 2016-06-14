@@ -30,12 +30,20 @@
 .conversation {
     height: 69%;
     margin-top: 0px;
+    margin-left: 0px;
     border: 1px #adadad solid;
-
+    list-style-type: none;
+    padding: 0;
     overflow: auto;
 }
 
 #message {
     margin-left: 10px;
     width: 80%;
+}
+
+p.words {
+    margin-left: 1px;
+    font-size: smaller;
+    margin-right: 5px;
 }

@@ -5,12 +5,8 @@
     <!-- likely some spans and stuff -->
   </header>
 
-  <ul class="conversation">
-    <!--<li>
-      <div class="message">
-        <p></p>
-      </div>
-    <li>-->
+  <ul class="conversation" id="conv">
+
   </ul>
   <input #message type="text" id="message" placeholder="Enter message here...">
   <button type="submit" id="submit" (click)="onSubmit(message.value)">Send</button>

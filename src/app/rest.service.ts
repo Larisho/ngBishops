@@ -19,8 +19,7 @@ export class RestService {
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
     return this._http.get(this.host + '/~gbianchet/restapi?method=chat1&username=' + username + '&message=' + message, {
       headers: headers
-    })
-      .map(res => res.json());
+    }).map(res => res.json());
   }
 
   login(username: string, password: string) {
